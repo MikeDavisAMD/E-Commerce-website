@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Cart = () => {
   const { updateQuantity, removeFromCart } = useContext(CartContext);
 
-  const [cartData, setCartData] = useState([]);
+  const [cartData, setCartData] = useState([]); // edited from github by Mike Davis
 
   const fetchCart = async () => {
     try {
